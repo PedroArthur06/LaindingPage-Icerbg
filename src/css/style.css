@@ -1,5 +1,5 @@
 body {
-  background-color: #101218; /* Light blue background */
+  background-color: #F1F8E9; /* Light blue background */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ h3{
   display: flex;
   justify-content: center;
   position: relative;
-  overflow: hidden; /* optional: hides snowflakes outside the area */
+  overflow: hidden;
   }
   
   .logo {
@@ -47,7 +47,7 @@ h3{
   position: absolute;
   top: 0;
   font-size: 12px;
-  color: #a6a7e0;
+  color: #2b2dce;
   opacity: 0.8;
   animation: fallAndDrift 5s linear infinite;
 }
