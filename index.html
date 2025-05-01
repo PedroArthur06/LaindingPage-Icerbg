@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iceberg</title>
-  <link rel="stylesheet" href="src/CSS/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="logo-container">
-    <img src="src/IMG/logo.png" alt="logo" class="logo">
-    <div class="snowflakes">
-      <div class="snowflake">*</div>
-      <div class="snowflake">*</div>
-      <div class="snowflake">*</div>
-      <div class="snowflake">*</div>
-      <div class="snowflake">*</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Iceberg</title>
+    <link rel="stylesheet" href="src/CSS/style.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <img src="src/IMG/logo.png" alt="logo" class="logo" />
+      <div class="snowflakes">
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+        <div class="snowflake">*</div>
+      </div>
     </div>
-  </div>  
 
-  <h1>Transforme o calor em conforto com a Iceberg - Ar condicionado</h1>
-  <h3>Soluções em climatização com excelência e eficiência.</h3>
+    <h1>Transforme o calor em conforto com a Iceberg - Ar condicionado</h1>
+    <h3>Soluções em climatização com excelência e eficiência.</h3>
 
-  <ul class="beneficios">
-    <li>Atendimento rápido e eficiente</li>
-    <li>Preços justos e transparentes</li>
-    <li>Garantia nos serviços prestados</li>
-    <li>Orçamento sem compromisso</li>
-    <li>Ambientes mais frescos e saudáveis</li>
-    <li>Economia de energia com manutenção preventiva</li>
-  </ul>
+    <ul class="beneficios">
+      <li>Atendimento rápido e eficiente</li>
+      <li>Preços justos e transparentes</li>
+      <li>Garantia nos serviços prestados</li>
+      <li>Orçamento sem compromisso</li>
+      <li>Ambientes mais frescos e saudáveis</li>
+      <li>Economia de energia com manutenção preventiva</li>
+    </ul>
 
-  <h3>Serviços oferecidos:</h3>
-  <ul class="servicos">
-    <li>Instalação de ar condicionado</li>
-    <li>Manutenção preventiva e corretiva</li>
-    <li>Limpeza de filtros de dutos</li>
-    <li>Carga de gás refrigerante</li>
-    <li>Reparo e troca de gás</li>
-  </ul>  <!-- ← fechamento adicionado -->
+    <h3>Serviços oferecidos:</h3>
+    <ul class="servicos">
+      <li>Instalação de ar condicionado</li>
+      <li>Manutenção preventiva e corretiva</li>
+      <li>Limpeza de filtros de dutos</li>
+      <li>Carga de gás refrigerante</li>
+      <li>Reparo e troca de gás</li>
+    </ul>
+    <!-- ← fechamento adicionado -->
 
-  <h3>Entre em contato</h3>
-  <form action="#" method="post">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-  
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-  
-    <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
-  
-    <label for="servico">Tipo de serviço:</label>
-    <select id="servico" name="servico" required>
-      <option value="" disabled selected>Selecione um serviço</option>
-      <option value="instalacao">Instalação de ar condicionado</option>
-      <option value="manutencao">Manutenção preventiva e corretiva</option>
-      <option value="limpeza">Limpeza de filtros de dutos</option>
-      <option value="carga">Carga de gás refrigerante</option>
-      <option value="reparo">Reparo e troca de gás</option>
-    </select>
-    <button type="submit">Enviar</button>
-  </form>
+    <h3>Entre em contato</h3>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome"
+        required
+      />
 
-</body>
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Digite seu e-mail"
+        required
+      />
+
+      <label for="telefone">Telefone:</label>
+      <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        placeholder="Digite seu telefone"
+        required
+      />
+
+      <label for="servico">Tipo de serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="" disabled selected>Selecione um serviço</option>
+        <option value="instalacao">Instalação de ar condicionado</option>
+        <option value="manutencao">Manutenção preventiva e corretiva</option>
+        <option value="limpeza">Limpeza de filtros de dutos</option>
+        <option value="carga">Carga de gás refrigerante</option>
+        <option value="reparo">Reparo e troca de gás</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
 </html>
 <script src="src/JS/script.js"></script>
