@@ -3,10 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevents scrollbars from appearing */
 }
 h1 {
-  color: #3498db; 
+  color: #0D47A1; 
   font-size: 25pt; 
   text-align: center; 
   font-family: Arial, sans-serif;
@@ -26,6 +25,7 @@ h3{
   justify-content: center;
   position: relative;
   overflow: hidden;
+  margin-top: 20px;
   }
   
   .logo {
@@ -46,18 +46,18 @@ h3{
 .snowflake {
   position: absolute;
   top: 0;
-  font-size: 12px;
+  font-size: 20px;
   color: #2b2dce;
   opacity: 0.8;
   animation: fallAndDrift 5s linear infinite;
 }
 
-/* posições iniciais */
 .snowflake:nth-child(1) { left: 30%; animation-delay: 0s; }
 .snowflake:nth-child(2) { left: 50%; animation-delay: 1s; }
 .snowflake:nth-child(3) { left: 70%; animation-delay: 2s; }
+.snowflake:nth-child(4) { left: 20%; animation-delay: 1.5s; }
+.snowflake:nth-child(5) { left: 80%; animation-delay: 2.5s; }
 
-/* keyframes unificados */
 @keyframes fallAndDrift {
   0% {
     transform: translateX(0) translateY(-50px);
@@ -73,8 +73,10 @@ h3{
   }
 }
 
-
-ul{
+ul.beneficios{
+  padding-left: 20px;
+  font-size: 14pt;
+  line-height: 1.5;
   font-family: Calibri;
   list-style-type: none;
   padding: 0;
