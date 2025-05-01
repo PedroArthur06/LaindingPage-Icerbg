@@ -1,0 +1,65 @@
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.bg-home{
+  position: relative;
+}
+
+.bg-home::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #E8F1F3), url('../img/bg-home.jpg');
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+}
+
+.hero{
+  color: $LightColor-normal;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+
+  h1{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 25pt;
+  }
+
+  p{
+    text-align: center;
+    margin: 14px 0;
+    color: $DarkColor-normal;
+  }
+}
+
+.button-contact{
+  padding: 14px 28px;
+  color: $LightColor-normal;
+  background-color: $DarkColor-normal;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+  border-radius: 4px;
+}
+
+.button-contact:hover{
+  animation: scaleButton 0.8s alternate infinite;
+  background-color: $DarkColor-light;
+  color: $DarkColor-normal;
+}
