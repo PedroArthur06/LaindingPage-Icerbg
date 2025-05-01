@@ -1,4 +1,6 @@
-@import"colors.scss";
+@import"colors";
+@import "header";
+@import"layout";
 body {
   background-color: $LightColor-normal;
   font-family: Arial, Helvetica, sans-serif;
@@ -45,52 +47,14 @@ a{
   position: relative;
   overflow: hidden;
   margin-top: 20px;
-  }
+}
   
   .logo {
   max-width: 150px;
   height: auto;
   display: block;
-  }
-
-.snowflakes {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
 }
 
-.snowflake {
-  position: absolute;
-  top: 0;
-  font-size: 20px;
-  color: #2b2dce;
-  opacity: 0.8;
-  animation: fallAndDrift 5s linear infinite;
-}
-
-.snowflake:nth-child(1) { left: 30%; animation-delay: 0s; }
-.snowflake:nth-child(2) { left: 50%; animation-delay: 1s; }
-.snowflake:nth-child(3) { left: 70%; animation-delay: 2s; }
-.snowflake:nth-child(4) { left: 20%; animation-delay: 1.5s; }
-.snowflake:nth-child(5) { left: 80%; animation-delay: 2.5s; }
-
-@keyframes fallAndDrift {
-  0% {
-    transform: translateX(0) translateY(-50px);
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(20px) translateY(125px);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateX(0) translateY(300px);
-    opacity: 0;
-  }
-}
 
 ul.beneficios{
   padding-left: 20px;

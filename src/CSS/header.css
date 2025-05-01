@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i {
+  color: #000D13;
+}
+
+.header-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #5591B3;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.header-button {
+  border: 1px solid #00314F;
+  padding: 8px 24px;
+  border-radius: #00314F;
+  background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.header-button:hover {
+  background-color: #5591B3;
+  border: 1px solid #5591B3;
+}/*# sourceMappingURL=header.css.map */
