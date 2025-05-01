@@ -1,6 +1,6 @@
 @import"colors.scss";
 body {
-  background-color: $primary-normal;
+  background-color: $LightColor-normal;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@ a{
   text-decoration: none;
 }
 
-.logo-container {
+.header-logo {
   display: flex;
   justify-content: center;
   position: relative;

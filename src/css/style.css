@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-.logo-container {
+.header-logo {
   display: flex;
   justify-content: center;
   position: relative;
