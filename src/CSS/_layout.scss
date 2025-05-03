@@ -213,14 +213,14 @@
   width: 100%;
   padding: 20px 0;
   box-sizing: border-box;
-  }
-  
-  .works.swiper .swiper-wrapper {
+}
+
+.works.swiper .swiper-wrapper {
   display: flex;
   align-items: stretch;
-  }
-  
-  .works.swiper .swiper-slide {
+}
+
+.works.swiper .swiper-slide {
   background-color: #E8F1F3;
   border-radius: 8px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
@@ -228,28 +228,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 354px;
+  max-width: 280px;
   margin: 0 auto;
-  }
-  
-  .works.swiper .swiper-slide img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+  scale: 0.85; /* Reduz tamanho padrão */
+}
+
+/* Estiliza o slide ativo, deixando maior e mais destacado */
+.works.swiper .swiper-slide-active {
+  scale: 1; /* Mantém o tamanho normal */
+  opacity: 1;
+}
+
+/* Ajuste nas imagens dentro do carrossel */
+.works.swiper .swiper-slide img {
   width: 100%;
-  transition: transform 0.2s;
-  }
-  
-  .works.swiper .swiper-slide img:hover {
-  transform: scale(1.2);
-  z-index: 1;
-  }
-  
-  .works.swiper .swiper-slide .work-info {
+  transition: transform 0.3s;
+}
+
+.works.swiper .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.works.swiper .swiper-slide .work-info {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 14px;
   background-color: #E8F1F3;
-  z-index: 99;
-  }
+}
+
   
   .works.swiper .swiper-slide .work-info button {
   color: #E8F1F3;

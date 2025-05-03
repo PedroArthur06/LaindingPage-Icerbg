@@ -21,11 +21,20 @@ Serviço: ${servico}`;
     });
   }
 
-  // Initialize Swiper carousel for works section
   const swiper = new Swiper('.works.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 20,
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
     loop: true,
+    spaceBetween: 20,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 250,  // Aumenta a profundidade para destacar o centro
+      modifier: 1.2,  // Ajusta o tamanho relativo dos slides
+      slideShadows: false,
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -35,14 +44,9 @@ Serviço: ${servico}`;
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
+      320: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
     },
   });
 });
