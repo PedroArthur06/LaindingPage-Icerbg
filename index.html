@@ -21,6 +21,12 @@
 
     <title>Iceberg</title>
     <link rel="stylesheet" href="src/CSS/style.css" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="bg-home">
@@ -85,52 +91,59 @@
           libero vero voluptatum aliquid dignissimos.
         </p>
       </div>
-      <section class="works">
-        <div class="work">
-          <img
-            src="src/IMG/instalação.png"
-            alt="Instalação de ar condicionado"
-          />
-          <div class="work-info">
-            <strong>Instalação</strong>
-            <button>R$300,00</button>
+      <section class="works swiper">
+        <div class="swiper-wrapper">
+          <div class="work swiper-slide">
+            <img
+              src="src/IMG/instalação.png"
+              alt="Instalação de ar condicionado"
+            />
+            <div class="work-info">
+              <strong>Instalação</strong>
+              <button>R$300,00</button>
+            </div>
           </div>
-        </div>
 
-        <div class="work">
-          <img src="src/IMG/Limpeza.png" alt="Limpeza de filtros" />
-          <div class="work-info">
-            <strong>Limpeza</strong>
-            <button>R$150,00</button>
+          <div class="work swiper-slide">
+            <img src="src/IMG/Limpeza.png" alt="Limpeza de filtros" />
+            <div class="work-info">
+              <strong>Limpeza</strong>
+              <button>R$150,00</button>
+            </div>
           </div>
-        </div>
 
-        <div class="work">
-          <img
-            src="src/IMG/Manutenção.png"
-            alt="Manutenção corretiva e preventiva"
-          />
-          <div class="work-info">
-            <strong>Manutenção corretiva e preventiva</strong>
-            <button>R$300,00</button>
+          <div class="work swiper-slide">
+            <img
+              src="src/IMG/Manutenção.png"
+              alt="Manutenção corretiva e preventiva"
+            />
+            <div class="work-info">
+              <strong>Manutenção corretiva e preventiva</strong>
+              <button>R$300,00</button>
+            </div>
           </div>
-        </div>
 
-        <div class="work">
-          <img src="src/IMG/Carga.png" alt="Carga de gás refrigerante" />
-          <div class="work-info">
-            <strong>Carga de gás refrigerante</strong>
-            <button>R$200,00</button>
+          <div class="work swiper-slide">
+            <img src="src/IMG/Carga.png" alt="Carga de gás refrigerante" />
+            <div class="work-info">
+              <strong>Carga de gás refrigerante</strong>
+              <button>R$200,00</button>
+            </div>
           </div>
-        </div>
 
-        <div class="work">
-          <img src="src/IMG/Reparo.png" alt="Reparo" />
-          <div class="work-info">
-            <strong>Reparo e troca de gás</strong>
-            <button>R$320,00</button>
+          <div class="work swiper-slide">
+            <img src="src/IMG/Reparo.png" alt="Reparo" />
+            <div class="work-info">
+              <strong>Reparo e troca de gás</strong>
+              <button>R$320,00</button>
+            </div>
           </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </section>
     </section>
     <!-- ← fechamento adicionado -->
@@ -177,5 +190,8 @@
       <button type="submit" class="button-contact">Enviar</button>
     </form>
     <script src="src/JS/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

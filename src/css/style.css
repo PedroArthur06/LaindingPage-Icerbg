@@ -282,7 +282,43 @@ i {
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
+.work img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.2s;
+}
 
+.work img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.work-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #E8F1F3;
+  z-index: 99;
+}
+
+.work-info button {
+  color: #E8F1F3;
+  background-color: #00314F;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .works {
+    flex-direction: column;
+  }
+  .work img {
+    max-width: 600px;
+  }
+}
 body {
   background-color: #E8F1F3;
   font-family: Arial, Helvetica, sans-serif;
