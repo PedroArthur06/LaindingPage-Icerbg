@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100%;
 }
@@ -378,6 +379,61 @@ i {
   }
   .card-wrapper .swipper-slide-button {
     display: none;
+  }
+}
+#form-contato {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels e inputs */
+#form-contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+#form-contato input,
+#form-contato select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#form-contato input:focus,
+#form-contato select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Botão */
+.button-contact {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-contact:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  #form-contato {
+    padding: 20px;
   }
 }
 body {
