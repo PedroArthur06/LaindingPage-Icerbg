@@ -11,37 +11,37 @@ document.addEventListener("DOMContentLoaded", function () {
       const servico = document.getElementById("servico").value;
 
       const mensagem = `Olá! Vi seu perfil no Instagram e gostaria de saber mais sobre os serviços de ar-condicionado.%0A
-      Nome: ${nome}%0A
-      E-mail: ${email}%0A
-      Telefone: ${telefone}%0A
-      Serviço: ${servico}`;
+Nome: ${nome}%0A
+E-mail: ${email}%0A
+Telefone: ${telefone}%0A
+Serviço: ${servico}`;
 
       const url = `https://wa.me/65981325445?text=${mensagem}`;
       window.open(url, "_blank");
     });
   }
-})
 
-new Swiper('.card-wrapper', {
-  loop: true,
-  spaceBetween: 30,
 
-  // Pagination bullets
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
+  new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
 
-  breakpoints: {
-    0:   { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024:{ slidesPerView: 3 },
-  },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    breakpoints: {
+      0:   { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024:{ slidesPerView: 3 },
+    },
+  });
 });

@@ -232,6 +232,17 @@
   cursor: grabbing
 }
 
+.card-list .swiper-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+  transform: scale(0.85);
+}
+
+.card-list .swiper-slide-active {
+  transform: scale(1); 
+  opacity: 1;
+}
+
 .card-list .card-item:hover {
   border-color: #5372F0;
 }
@@ -255,33 +266,33 @@
 }
 
 .card-list .badge.instalacao {
-  color: #B22485;
-  background: #F7DFF5;
+  color: $DarkColor-normal;
+  background: $LightColor-light;
 }
 
 .card-list .badge.limpeza {
-  color: #B25A2B;
-  background: #FFE3D2;
+  color: $DarkColor-normal;
+  background: $LightColor-light;
 }
 
 .card-list .badge.manutencao {
-  color: #205C20;
-  background: #D6F8D6;
+  color: $DarkColor-normal;
+  background: $LightColor-light;
 }
 
 .card-list .badge.reparo {
-  color: #856404;
-  background: #fff3cd;
+  color: $DarkColor-normal;
+  background:$LightColor-light;
 }
 
 .card-list .badge.carga {
-  color: #B22485;
-  background: #F7DFF5;
+  color: $DarkColor-normal;
+  background: $LightColor-light;
 }
 
 .card-list .card-title {
   font-size: 1.19rem;
-  color: black;
+  color: $DarkColor-light;
   font-weight: 600;
 }
 

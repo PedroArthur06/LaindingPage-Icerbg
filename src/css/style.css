@@ -290,6 +290,17 @@ i {
   cursor: grabbing;
 }
 
+.card-list .swiper-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+  transform: scale(0.85);
+}
+
+.card-list .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .card-list .card-item:hover {
   border-color: #5372F0;
 }
@@ -315,33 +326,33 @@ i {
 }
 
 .card-list .badge.instalacao {
-  color: #B22485;
-  background: #F7DFF5;
+  color: #00314F;
+  background: #C4ECF6;
 }
 
 .card-list .badge.limpeza {
-  color: #B25A2B;
-  background: #FFE3D2;
+  color: #00314F;
+  background: #C4ECF6;
 }
 
 .card-list .badge.manutencao {
-  color: #205C20;
-  background: #D6F8D6;
+  color: #00314F;
+  background: #C4ECF6;
 }
 
 .card-list .badge.reparo {
-  color: #856404;
-  background: #fff3cd;
+  color: #00314F;
+  background: #C4ECF6;
 }
 
 .card-list .badge.carga {
-  color: #B22485;
-  background: #F7DFF5;
+  color: #00314F;
+  background: #C4ECF6;
 }
 
 .card-list .card-title {
   font-size: 1.19rem;
-  color: black;
+  color: #002132;
   font-weight: 600;
 }
 
