@@ -266,15 +266,25 @@ i {
   max-width: 780px;
 }
 
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .works.swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 20px 0;
-  box-sizing: border-box;
 }
 
 .works.swiper .swiper-wrapper {
   display: flex;
-  align-items: stretch;
+  justify-content: center; /* Centraliza os slides */
+  align-items: center;
 }
 
 .works.swiper .swiper-slide {
@@ -289,13 +299,17 @@ i {
   margin: 0 auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.7;
-  scale: 0.85; /* Reduz tamanho padrão */
+  scale: 0.85;
 }
 
 /* Estiliza o slide ativo, deixando maior e mais destacado */
 .works.swiper .swiper-slide-active {
   scale: 1; /* Mantém o tamanho normal */
   opacity: 1;
+}
+
+.works.swiper .swiper-slide:nth-child(2) {
+  margin: 0 auto;
 }
 
 /* Ajuste nas imagens dentro do carrossel */

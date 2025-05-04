@@ -25,14 +25,15 @@ Serviço: ${servico}`;
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 3, // Número fixo de slides visíveis
     loop: true,
+    initialSlide: 1, // Garante que o primeiro slide carregado esteja centralizado
     spaceBetween: 20,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
-      depth: 250,  // Aumenta a profundidade para destacar o centro
-      modifier: 1.2,  // Ajusta o tamanho relativo dos slides
+      depth: 250,
+      modifier: 1.2,
       slideShadows: false,
     },
     pagination: {
@@ -42,11 +43,6 @@ Serviço: ${servico}`;
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: { slidesPerView: 1 },
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
     },
   });
 });
