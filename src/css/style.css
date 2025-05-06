@@ -207,9 +207,6 @@ i {
   .about-content {
     flex-direction: column;
   }
-  .about-content img {
-    max-width: 100%;
-  }
   .about-description h2 {
     font-size: 28pt;
   }
