@@ -246,8 +246,8 @@ i {
 }
 
 .services {
-  background-color: #E8F1F3;
-  color: #00314F;
+  background-color: #000D13;
+  color: #E8F1F3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,6 +277,7 @@ i {
 }
 
 .card-list .card-item {
+  font-family: "Inter", sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -447,6 +448,21 @@ i {
     width: 100%;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: #000D13;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+}
+
 body {
   background-color: #E8F1F3;
   font-family: Arial, Helvetica, sans-serif;

@@ -43,3 +43,5 @@ Serviço: ${servico}`;
     },
   });
 });
+
+AOS.init();

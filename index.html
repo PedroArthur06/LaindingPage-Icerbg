@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Link para as animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fonte do titulo -->
@@ -37,22 +40,25 @@
     <div class="bg-home">
       <header>
         <nav class="header-content container">
-          <div class="header-icons">
-            <a href="#">
+          <div class="header-icons" data-aos="fade-down-right">
+            <a href="https://www.instagram.com/iceberg.arcondicionado?igsh=czB2dXc4MzJmMnR0">
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
           </div>
 
-          <div class="header-logo">
-            <img src="src/IMG/logo.png" alt="logo" class="logo" />
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+            <img data-aos="flip-up"
+                 data-aos-delay="300"
+                 data-aos-duration="1500"
+                 src="src/IMG/logo.png" alt="logo" class="logo" />
           </div>
 
-          <div>
+          <div data-aos="fade-down-left">
             <a class="header-button" href="#">Faça o seu orçamento</a>
           </div>
         </nav>
 
-        <main class="hero container">
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
           <h1>
             Transforme o calor em conforto com a Iceberg - Ar condicionado
           </h1>
@@ -64,13 +70,13 @@
 
     <section class="about">
       <div class="container about-content">
-        <div class="image-collage">
+        <div class="image-collage" data-aos="zoom-in" data-aos-delay="100">
           <img src="src/IMG/imagem04.jpg" class="img img1" />
           <img src="src/IMG/imagem03.jpg" class="img img2" />
           <img src="src/IMG/imagem02.jpg" class="img img3" />
         </div>
 
-        <div class="about-description">
+        <div class="about-description" data-aos="zoom-out-left" data-aos-delay="350">
           <h2>Sobre</h2>
           <p>
             A Iceberg - Ar Condicionado oferece soluções completas em
@@ -99,7 +105,7 @@
         <div class="container swiper">
           <div class="card-wrapper">
             <ul class="card-list swiper-wrapper">
-              <li class="card-item swiper-slide">
+              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="150">
                 <img
                   src="src/IMG/instalação.png"
                   alt="Card image"
@@ -109,7 +115,7 @@
                 <h2 class="card-title">R$300,00</h2>
               </li>
     
-              <li class="card-item swiper-slide">
+              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="250">
                 <img
                   src="src/IMG/Limpeza.png"
                   alt="Card image"
@@ -119,7 +125,7 @@
                 <h2 class="card-title">R$150,00</h2>
               </li>
     
-              <li class="card-item swiper-slide">
+              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="350">
                 <img
                   src="src/IMG/Manutenção.png"
                   alt="Card image"
@@ -129,13 +135,13 @@
                 <h2 class="card-title">R$350,00</h2>
               </li>
     
-              <li class="card-item swiper-slide">
+              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="450">
                 <img src="src/IMG/Reparo.png" alt="Card image" class="card-image" />
                 <p class="badge reparo">Reparo e troca de gás</p>
                 <h2 class="card-title">R$120,00</h2>
               </li>
     
-              <li class="card-item swiper-slide">
+              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="550">
                 <img src="src/IMG/Carga.png" alt="Card image" class="card-image" />
                 <p class="badge carga">Carga de gás refrigerante</p>
                 <h2 class="card-title">R$300,00</h2>
@@ -193,6 +199,22 @@
 
       <button type="submit" class="button-enviar">Enviar</button>
     </form>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="#">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+      </div>
+
+      <div>
+        <img src="src/IMG/logo.png" alt="logo Iceberg">
+      </div>
+
+      <p>Copyright 2025 | Iceberg - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/JS/script.js"></script>
   </body>

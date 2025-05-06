@@ -190,8 +190,8 @@
 }
 
 .services{
-  background-color: $LightColor-normal;
-  color: $DarkColor-normal;
+  background-color: $DarkColor-dark;
+  color: $LightColor-normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,6 +221,7 @@
 }
 
 .card-list .card-item {
+  font-family: "Inter", sans-serif;
   user-select: none;
   display: block;
   background: #fff;
@@ -389,4 +390,19 @@
   .button-enviar {
     width: 100%;
   }
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: $DarkColor-dark;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 8px;
 }
