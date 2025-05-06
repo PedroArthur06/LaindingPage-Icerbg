@@ -21,11 +21,9 @@ Serviço: ${servico}`;
     });
   }
 
-
   new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
-    centeredSlides: true,
 
     pagination: {
       el: '.swiper-pagination',
