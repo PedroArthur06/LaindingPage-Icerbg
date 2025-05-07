@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import "colors";
 
 .container{
   max-width: 1440px;
@@ -14,7 +15,7 @@
   content: '';
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #E8F1F3), url('../img/bg-home.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $LightColor-normal), url('../img/bg-home.jpg');
   left: 0;
   top: 0;
   width: 100%;
@@ -390,17 +391,65 @@
   }
 }
 
-.footer{
+.footer {
+  background: #000D13;
+  color: #fff;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 54px 0;
-  gap: 24px;
-  color: $DarkColor-dark;
+  text-align: center;
+  gap: 20px;
 }
 
-.footer-icons{
-  display: flex;
-  gap: 8px;
+.footer-icons {
+  margin-bottom: 10px;
+}
+
+.footer-icons a {
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  i{
+    animation: translateY 0.8s infinite alternate;
+    color: $MediumColor-normal;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+/* Logo centralizado e com tamanho adequado */
+.footer img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Texto final com tipografia simples e espaçamento apropriado */
+.footer p {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Responsividade */
+@media (min-width: 600px) {
+  .footer p {
+    flex: none;
+    margin-top: 0;
+    text-align: right;
+  }
 }
