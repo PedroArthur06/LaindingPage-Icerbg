@@ -202,7 +202,7 @@ $DarkColor-normal: #0F2F42;
 .card-wrapper {
   overflow: visible;
   max-width: 68.75rem;      
-  margin: 0 3.75rem 2.1875rem;
+  margin: 0 auto;
   padding: 1.25rem 0.625rem; 
 }
 
@@ -231,6 +231,7 @@ $DarkColor-normal: #0F2F42;
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.7;
   transform: scale(0.85);
+  transform-origin: center;
 }
 
 .card-list .swiper-slide-active {

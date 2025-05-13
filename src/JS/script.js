@@ -24,6 +24,8 @@ Serviço: ${servico}`;
   new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
+    centeredSlides: true,  // Centraliza o slide ativo
+    centerInsufficientSlides: true, // Garante centralização mesmo se houver poucos slides
 
     pagination: {
       el: '.swiper-pagination',
