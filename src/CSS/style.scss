@@ -10,7 +10,7 @@ body {
 }
 h1 {
   color: #0D47A1; 
-  font-size: 25pt; 
+  font-size: 2rem; 
   text-align: center; 
   font-family: 'Titillium Web', sans-serif;
   margin-top: 20px;
@@ -18,7 +18,7 @@ h1 {
 
 h3{
   color: #2c3e50; 
-  font-size: 15pt; 
+  font-size: 1rem; 
   text-align: center;
   font-family:"Inter", sans-serif;
   margin-top: 10px;
@@ -108,4 +108,67 @@ button:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+// 1) Breakpoint para tablets e telas médias (<= 768px)
+@media (max-width: 768px) {
+  // Ajustes de tipografia
+  h1 {
+    font-size: 20pt;
+    margin-top: 15px;
+  }
+  h3 {
+    font-size: 13pt;
+    margin-top: 8px;
+  }
+
+  // Logo e header
+  .header-logo {
+    margin-top: 15px;
+  }
+  .logo {
+    max-width: 120px;
+  }
+
+  // Formulário
+  form {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  // Listas
+  ul.beneficios,
+  ul.servicos {
+    font-size: 13pt;
+    padding: 0 1rem;
+  }
+}
+
+// 2) Breakpoint para smartphones (<= 480px)
+@media (max-width: 480px) {
+  // Tipografia ainda mais leve
+  h1 {
+    font-size: 18pt;
+  }
+  h3 {
+    font-size: 11pt;
+  }
+
+  // Containers gerais
+  .wrapper, 
+  form {
+    padding: 0 1rem;   // garante espaçamento nas laterais
+  }
+
+  // Slider ou grids de cards
+  .slide {
+    flex: 0 0 100%;    // força 1 item por vez
+  }
+
+  // Qualquer elemento que você tenha width fixa
+  // substitua por max-width ou width: 100%
+  .algum-seletor-com-width-fixo {
+    width: 100%;
+    max-width: 100%/* valor desejado */;
+  }
 }
