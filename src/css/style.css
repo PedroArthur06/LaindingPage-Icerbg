@@ -108,9 +108,10 @@ i {
   }
 }
 .container {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 1rem;
+  width: 100%;
 }
 
 .bg-home {
@@ -140,7 +141,7 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px;
+  padding: 0.875rem;
 }
 .hero h1 {
   color: #00314F;
@@ -214,11 +215,12 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 34px 14px 64px 14px;
+  gap: 0.875rem;
+  padding: 2.125rem 0.875rem 4rem 0.875rem;
 }
 .about-content .image-collage {
-  flex: 0 0 400px;
+  flex: 0 0 25rem;
+  max-width: 100%;
   width: 400px;
   height: auto;
   overflow: visible;
@@ -245,9 +247,10 @@ i {
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
+    gap: 1.5rem;
   }
-  .about-content > .about-description h2 {
-    font-size: 28pt;
+  .about-content .about-description h2 {
+    font-size: 1.75rem;
   }
 }
 .services {
@@ -263,8 +266,8 @@ i {
 .services-content h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 14px;
+  font-size: 1.75rem;
+  margin-bottom: 0.875rem;
 }
 
 .services-content p {

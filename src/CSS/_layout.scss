@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import "colors";
 
-.container{
-  max-width: 1440px;
+.container {
+  max-width: 90rem;      
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 1rem;       
+  width: 100%;
 }
+
 
 .bg-home{
   position: relative;
@@ -34,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px;
+  padding: 0.875rem;     
 
   h1{
     color: $DarkColor-normal;
@@ -118,21 +120,21 @@ $DarkColor-normal: #0F2F42;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 34px 14px 64px 14px;
-
+  gap: 0.875rem;              
+  padding: 2.125rem 0.875rem 4rem 0.875rem;
 
    .image-collage {
-    flex: 0 0 400px; 
+    flex: 0 0 25rem;          // 400px → 25rem
+    max-width: 100%; 
     width: 400px;
     height: auto;
-     overflow: visible;
+    overflow: visible;
     position: relative;
 
     img {
       display: block;
-      width: 100%;    // preenche 400px
-      height: auto;   // mantém proporção
+      width: 100%;    
+      height: auto;   
     }
   }
 
@@ -156,10 +158,11 @@ $DarkColor-normal: #0F2F42;
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
+    gap: 1.5rem;
 
-    > .about-description {
+    .about-description {
       h2 {
-        font-size: 28pt;
+        font-size: 1.75rem;
       }
     }
   }
@@ -179,8 +182,8 @@ $DarkColor-normal: #0F2F42;
 .services-content h2{
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 14px;
+  font-size: 1.75rem;     
+  margin-bottom: 0.875rem;
 }
 
 .services-content p{
