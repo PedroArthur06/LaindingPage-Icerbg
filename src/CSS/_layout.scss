@@ -201,9 +201,19 @@ $DarkColor-normal: #0F2F42;
 
 .card-wrapper {
   overflow: visible;
-  max-width: 68.75rem;      
+  max-width: 68.75rem;
   margin: 0 auto;
-  padding: 1.25rem 0.625rem; 
+  padding: 1.25rem 0.625rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-list .card-item {
@@ -234,6 +244,14 @@ $DarkColor-normal: #0F2F42;
   transform-origin: center;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 .card-list .swiper-slide-active {
   transform: scale(1); 
   opacity: 1;
@@ -241,7 +259,7 @@ $DarkColor-normal: #0F2F42;
 
 .card-list .card-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 10px;
 }
