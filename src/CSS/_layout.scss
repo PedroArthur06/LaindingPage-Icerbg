@@ -160,6 +160,12 @@ $DarkColor-normal: #0F2F42;
     flex-direction: column;
     gap: 1.5rem;
 
+    .image-collage {
+      flex: 1 1 auto;
+      width: 100%;
+      max-width: 100%;
+    }
+
     .about-description {
       h2 {
         font-size: 1.75rem;
@@ -194,7 +200,7 @@ $DarkColor-normal: #0F2F42;
 }
 
 .card-wrapper {
-  overflow: hidden;
+  overflow: visible;
   max-width: 68.75rem;      
   margin: 0 3.75rem 2.1875rem;
   padding: 1.25rem 0.625rem; 
@@ -340,7 +346,6 @@ $DarkColor-normal: #0F2F42;
   outline: none;
 }
 
-/* Botão "enviar"*/
 .button-enviar {
   display: block;
   width: 100%;
@@ -359,7 +364,6 @@ $DarkColor-normal: #0F2F42;
   background-color: #0056b3;
 }
 
-/* Responsivo */
 @media (max-width: 600px) {
   #form-contato {
     padding: 1.25rem;
@@ -414,7 +418,6 @@ $DarkColor-normal: #0F2F42;
   width: 7.5rem;     
 }
 
-/* Texto final com tipografia simples e espaçamento apropriado */
 .footer p {
   font-family: "Inter", sans-serif;
   margin: 0;
