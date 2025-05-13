@@ -188,16 +188,16 @@ $DarkColor-normal: #0F2F42;
 
 .services-content p{
   line-height: 150%;
-  margin-bottom: 14px;
   text-align: center;
-  max-width: 780px;
+  max-width: 48.75rem;    
+  margin-bottom: 0.875rem;
 }
 
 .card-wrapper {
-  max-width: 1100px;
-  margin: 0 60px 35px;
-  padding: 20px 10px;
   overflow: hidden;
+  max-width: 68.75rem;      
+  margin: 0 3.75rem 2.1875rem;
+  padding: 1.25rem 0.625rem; 
 }
 
 .card-list .card-item {
@@ -299,7 +299,7 @@ $DarkColor-normal: #0F2F42;
 
 @media screen and (max-width: 768px) {
   .card-wrapper {
-    margin: 0 10px 25px;
+    margin: 0 0.625rem 1.5625rem;
   }
 
   .card-wrapper .swipper-slide-button {
@@ -309,14 +309,13 @@ $DarkColor-normal: #0F2F42;
 
 #form-contato {
   background-color: #ffffff;
-  padding: 30px 40px;
   border-radius: 8px;
-  max-width: 500px;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.875rem 2.5rem;
+  max-width: 31.25rem; 
 }
 
-/* Labels */
 #form-contato label {
   display: block;
   margin-bottom: 5px;
@@ -324,7 +323,6 @@ $DarkColor-normal: #0F2F42;
   color: #333;
 }
 
-/* Inputs e selects */
 #form-contato input,
 #form-contato select {
   width: 100%;
@@ -349,7 +347,7 @@ $DarkColor-normal: #0F2F42;
   margin: 0 auto 10px auto;
   background-color: #007BFF;
   color: #fff;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -364,7 +362,7 @@ $DarkColor-normal: #0F2F42;
 /* Responsivo */
 @media (max-width: 600px) {
   #form-contato {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .button-enviar {
@@ -375,13 +373,13 @@ $DarkColor-normal: #0F2F42;
 .footer {
   background: #000D13;
   color: #fff;
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 20px;
+  padding: 2.5rem 1.25rem;  
+  gap: 1.25rem;
 }
 
 .footer-icons {
@@ -410,27 +408,22 @@ $DarkColor-normal: #0F2F42;
   }
 }
 
-/* Logo centralizado e com tamanho adequado */
 .footer img {
-  width: 120px;
   height: auto;
   margin-bottom: 15px;
+  width: 7.5rem;     
 }
 
 /* Texto final com tipografia simples e espaçamento apropriado */
 .footer p {
   font-family: "Inter", sans-serif;
   margin: 0;
-  font-size: 14px;
   line-height: 1.5;
+  font-size: 0.875rem; 
 }
 
-
-/* Responsividade */
 @media (min-width: 600px) {
   .footer p {
-    flex: none;
-    margin-top: 0;
     text-align: right;
   }
 }
