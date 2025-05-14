@@ -207,7 +207,7 @@ i {
 .about {
   background-color: #E8F1F3;
   overflow: hidden;
-  color: #0F2F42;
+  color: #00314F;
 }
 
 .about-content {
@@ -362,27 +362,27 @@ i {
 }
 
 .card-list .badge.instalacao {
-  color: #0F2F42;
+  color: #00314F;
   background: #C4ECF6;
 }
 
 .card-list .badge.limpeza {
-  color: #0F2F42;
+  color: #00314F;
   background: #C4ECF6;
 }
 
 .card-list .badge.manutencao {
-  color: #0F2F42;
+  color: #00314F;
   background: #C4ECF6;
 }
 
 .card-list .badge.reparo {
-  color: #0F2F42;
+  color: #00314F;
   background: #C4ECF6;
 }
 
 .card-list .badge.carga {
-  color: #0F2F42;
+  color: #00314F;
   background: #C4ECF6;
 }
 

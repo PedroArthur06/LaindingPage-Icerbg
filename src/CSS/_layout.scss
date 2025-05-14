@@ -8,7 +8,6 @@
   width: 100%;
 }
 
-
 .bg-home{
   position: relative;
 }
@@ -107,9 +106,6 @@
   }
 }
 
-// cores e variáveis
-$DarkColor-normal: #0F2F42;
-
 .about {
   background-color: #E8F1F3;
   overflow: hidden;
@@ -124,7 +120,7 @@ $DarkColor-normal: #0F2F42;
   padding: 2.125rem 0.875rem 4rem 0.875rem;
 
    .image-collage {
-    flex: 0 0 25rem;          // 400px → 25rem
+    flex: 0 0 25rem;         
     max-width: 100%; 
     width: 400px;
     height: auto;
@@ -137,8 +133,7 @@ $DarkColor-normal: #0F2F42;
       height: auto;   
     }
   }
-
-
+  
    .about-description {
     flex: 1;
 
@@ -173,7 +168,6 @@ $DarkColor-normal: #0F2F42;
     }
   }
 }
-
 
 .services{
   background-color: $DarkColor-dark;
@@ -394,7 +388,7 @@ $DarkColor-normal: #0F2F42;
 }
 
 .footer {
-  background: #000D13;
+  background: $DarkColor-dark;
   color: #fff;
   display: flex;
   flex-direction: column;
