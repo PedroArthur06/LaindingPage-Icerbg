@@ -35,7 +35,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.875rem;     
+  padding: 0.875rem;   
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;  
 
   h1{
     color: $DarkColor-normal;
