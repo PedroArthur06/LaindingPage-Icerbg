@@ -203,8 +203,12 @@
   padding: 1.25rem 0.625rem;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -213,93 +217,61 @@
   align-items: center;
 }
 
-.card-list .swiper-slide {
+.swiper-slide {
+  flex: 0 0 20rem;
+  max-width: 20rem;
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.7;
   transform: scale(0.85);
-  transform-origin: center;
-  flex: 0 0 20rem;
-  max-width: 20rem;
-}
-
-.swiper-slide {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
-}
-.swiper {
-  display: flex;
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
 
-.card-list .swiper-slide-active {
+.swiper-slide-active {
   transform: scale(1);
   opacity: 1;
 }
 
-.card-list .card-item {
+.card-item {
   font-family: "Inter", sans-serif;
   user-select: none;
-  display: block;
   background: #fff;
   padding: 18px;
   border-radius: 12px;
-  text-decoration: none;
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.07);
-  transition: 0.2s ease;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.2s;
 }
 
-.card-item {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 .card-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 20px rgba(0,0,0,0.12);
-}
-
-.card-list .card-item:active {
-  cursor: grabbing;
-}
-
-.card-list .card-item:hover {
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.12);
   border-color: #5372F0;
 }
 
-.card-list .card-image {
+.card-image {
   width: 100%;
-  aspect-ratio: 1 / 1;   
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.card-list .badge {
-  color: #5372f0;
+.badge {
   padding: 8px 16px;
   font-size: 0.95rem;
   font-weight: 500;
   margin: 16px 0 18px;
   background: #dde4ff;
-  width: fit-content;
   border-radius: 50px;
 }
 
-.card-list .badge.instalacao,
-.card-list .badge.limpeza,
-.card-list .badge.manutencao,
-.card-list .badge.reparo,
-.card-list .badge.carga {
-  color: $DarkColor-normal;
-  background: $LightColor-light;
-}
-
-.card-list .card-title {
+.card-title {
   font-size: 1.19rem;
-  color: $DarkColor-light;
   font-weight: 600;
 }
+
 .swiper .swiper-pagination-bullet {
   height: 13px;
   width: 13px;
@@ -307,7 +279,7 @@
   background: #5372F0;
 }
 
-.card-wrapper .swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
 
