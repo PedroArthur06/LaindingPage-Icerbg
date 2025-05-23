@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Link para as animações -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,16 +41,22 @@
       <header>
         <nav class="header-content container">
           <div class="header-icons" data-aos="fade-down-right">
-            <a href="https://www.instagram.com/iceberg.arcondicionado?igsh=czB2dXc4MzJmMnR0">
+            <a
+              href="https://www.instagram.com/iceberg.arcondicionado?igsh=czB2dXc4MzJmMnR0"
+            >
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
           </div>
 
           <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
-            <img data-aos="flip-up"
-                 data-aos-delay="300"
-                 data-aos-duration="1500"
-                 src="src/IMG/logo.png" alt="logo" class="logo" />
+            <img
+              data-aos="flip-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              src="src/IMG/logo.png"
+              alt="logo"
+              class="logo"
+            />
           </div>
 
           <div data-aos="fade-down-left">
@@ -74,7 +80,11 @@
           <img src="src/IMG/imagen sobre.png" class="imagem-sobre" />
         </div>
 
-        <div class="about-description" data-aos="zoom-out-left" data-aos-delay="350">
+        <div
+          class="about-description"
+          data-aos="zoom-out-left"
+          data-aos-delay="350"
+        >
           <h2>Sobre</h2>
           <p>
             A Iceberg - Ar Condicionado oferece soluções completas em
@@ -94,61 +104,85 @@
       <div class="services-content container">
         <h2>Serviços</h2>
         <p>
-          Seu conforto é nossa prioridade. Oferecemos serviços especializados em ar condicionado, utilizando as melhores práticas e ferramentas para garantir a eficiência e durabilidade do seu equipamento. Descubra o que podemos fazer por você.
+          Seu conforto é nossa prioridade. Oferecemos serviços especializados em
+          ar condicionado, utilizando as melhores práticas e ferramentas para
+          garantir a eficiência e durabilidade do seu equipamento. Descubra o
+          que podemos fazer por você.
         </p>
       </div>
-        <div class="container swiper">
-          <div class="card-wrapper">
-            <ul class="card-list swiper-wrapper">
-              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="150">
-                <img
-                  src="src/IMG/instalação.png"
-                  alt="Card image"
-                  class="card-image"
-                />
-                <p class="badge instalacao">Instalação de ar condicionado</p>
-                <h2 class="card-title">R$300,00</h2>
-              </li>
-    
-              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="250">
-                <img
-                  src="src/IMG/antonio-limpeza.jpg"
-                  alt="Card image"
-                  class="card-image"
-                />
-                <p class="badge limpeza">Limpeza</p>
-                <h2 class="card-title">R$150,00</h2>
-              </li>
-    
-              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="350">
-                <img
-                  src="src/IMG/antonio-manutencao.jpg"
-                  alt="Card image"
-                  class="card-image"
-                />
-                <p class="badge manutencao">Manutenção preventiva</p>
-                <h2 class="card-title">R$350,00</h2>
-              </li>
-    
-              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="450">
-                <img src="src/IMG/Reparo.png" alt="Card image" class="card-image" />
-                <p class="badge reparo">Reparo e troca de gás</p>
-                <h2 class="card-title">R$120,00</h2>
-              </li>
-    
-              <li class="card-item swiper-slide" data-aos="fade-up" data-aos-delay="550">
-                <img src="src/IMG/Carga.png" alt="Card image" class="card-image" />
-                <p class="badge carga">Carga de gás refrigerante</p>
-                <h2 class="card-title">R$300,00</h2>
-              </li>
-            </ul>
-    
-            <div class="swiper-pagination"></div>
-            <div class="swipper-slide-button swiper-button-prev"></div>
-            <div class="swipper-slide-button swiper-button-next"></div>
-          </div>
-        </div>
-        </section>
+
+      <!-- container do Swiper -->
+      <div class="container swiper card-wrapper">
+        <!-- wrapper do Swiper -->
+        <ul class="swiper-wrapper card-list">
+          <li
+            class="swiper-slide card-item"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <img
+              src="src/IMG/instalação.png"
+              alt="Instalação"
+              class="card-image"
+            />
+            <p class="badge instalacao">Instalação de ar condicionado</p>
+            <h2 class="card-title">R$300,00</h2>
+          </li>
+          <!-- demais slides aqui... -->
+          <li
+            class="swiper-slide card-item"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <img
+              src="src/IMG/antonio-limpeza.jpg"
+              alt="Limpeza"
+              class="card-image"
+            />
+            <p class="badge limpeza">Limpeza</p>
+            <h2 class="card-title">R$150,00</h2>
+          </li>
+          <li
+            class="swiper-slide card-item"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <img
+              src="src/IMG/antonio-manutencao.jpg"
+              alt="Manutenção"
+              class="card-image"
+            />
+            <p class="badge manutencao">Manutenção preventiva</p>
+            <h2 class="card-title">R$350,00</h2>
+          </li>
+          <li
+            class="swiper-slide card-item"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <img src="src/IMG/Reparo.png" alt="Reparo" class="card-image" />
+            <p class="badge reparo">Reparo e troca de gás</p>
+            <h2 class="card-title">R$120,00</h2>
+          </li>
+          <li
+            class="swiper-slide card-item"
+            data-aos="fade-up"
+            data-aos-delay="550"
+          >
+            <img
+              src="src/IMG/Carga.png"
+              alt="Carga de gás"
+              class="card-image"
+            />
+            <p class="badge carga">Carga de gás refrigerante</p>
+            <h2 class="card-title">R$300,00</h2>
+          </li>
+        </ul>
+
+        <!-- paginação e navegação -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
 
@@ -203,7 +237,7 @@
       </div>
 
       <div>
-        <img src="src/IMG/logo.png" alt="logo Iceberg">
+        <img src="src/IMG/logo.png" alt="logo Iceberg" />
       </div>
 
       <p>Copyright 2025 | Iceberg - Todos os direitos reservados</p>

@@ -197,7 +197,7 @@
 }
 
 .card-wrapper {
-  overflow: visible;
+  overflow: hidden;
   max-width: 68.75rem;
   margin: 0 auto;
   padding: 1.25rem 0.625rem;
@@ -252,6 +252,14 @@
   transition: 0.2s ease;
 }
 
+.card-item {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 20px rgba(0,0,0,0.12);
+}
+
 .card-list .card-item:active {
   cursor: grabbing;
 }
@@ -292,8 +300,7 @@
   color: $DarkColor-light;
   font-weight: 600;
 }
-
-.card-wrapper .swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
   height: 13px;
   width: 13px;
   opacity: 0.5;
@@ -304,7 +311,8 @@
   opacity: 1;
 }
 
-.card-wrapper .swipper-slide-button {
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
   color: #5372F0;
   margin-top: -35px;
 }
@@ -403,15 +411,7 @@ form button {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
-  .form-container {
-    padding: 0.5rem;  
-  }
-  form button {
-    padding: 0.75rem;
-    font-size: 1rem;
-  }
-}
+
 
 .footer {
   background: $DarkColor-dark;
