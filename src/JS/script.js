@@ -23,8 +23,8 @@ Serviço: ${servico}`;
 
   new Swiper('.card-wrapper', {
     loop: true,
-    spaceBetween: 30,
-    slidesPerView: 1,
+    spaceBetween: 24,
+    slidesPerView: 'auto',
     centeredSlides: true, 
 
     pagination: {

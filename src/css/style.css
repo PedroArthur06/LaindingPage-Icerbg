@@ -302,6 +302,33 @@ i {
   align-items: center;
 }
 
+.card-list .swiper-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+  transform: scale(0.85);
+  transform-origin: center;
+  flex: 0 0 20rem;
+  max-width: 20rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.swiper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-list .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .card-list .card-item {
   font-family: "Inter", sans-serif;
   -webkit-user-select: none;
@@ -325,29 +352,9 @@ i {
   border-color: #5372F0;
 }
 
-.card-list .swiper-slide {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.7;
-  transform: scale(0.85);
-  transform-origin: center;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.card-list .swiper-slide-active {
-  transform: scale(1);
-  opacity: 1;
-}
-
 .card-list .card-image {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -359,32 +366,16 @@ i {
   font-size: 0.95rem;
   font-weight: 500;
   margin: 16px 0 18px;
-  background: #DDE4FF;
+  background: #dde4ff;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50px;
 }
 
-.card-list .badge.instalacao {
-  color: #00314F;
-  background: #C4ECF6;
-}
-
-.card-list .badge.limpeza {
-  color: #00314F;
-  background: #C4ECF6;
-}
-
-.card-list .badge.manutencao {
-  color: #00314F;
-  background: #C4ECF6;
-}
-
-.card-list .badge.reparo {
-  color: #00314F;
-  background: #C4ECF6;
-}
-
+.card-list .badge.instalacao,
+.card-list .badge.limpeza,
+.card-list .badge.manutencao,
+.card-list .badge.reparo,
 .card-list .badge.carga {
   color: #00314F;
   background: #C4ECF6;
@@ -420,6 +411,29 @@ i {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 0.625rem 1.5625rem;
+  }
+  .card-wrapper .swipper-slide-button {
+    display: none;
+  }
+}
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 #form-contato {
   background-color: #ffffff;
   border-radius: 8px;
@@ -477,6 +491,15 @@ i {
   }
   .button-enviar {
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .form-container {
+    padding: 0.5rem;
+  }
+  form button {
+    padding: 0.75rem;
+    font-size: 1rem;
   }
 }
 .footer {
